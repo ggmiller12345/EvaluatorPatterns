@@ -4,16 +4,16 @@ Law11RP1,Remember,Procedural,"List, in order, the steps an assistant referee fol
 Law11RM1,Remember,Metacognitive,"Which offside judgments do the Laws of the Game explicitly leave to the discretion of the referee rather than defining objectively?"
 Law11UF1,Understand,Factual,"Explain what the term 'second-last opponent' means in Law 11, including how the goalkeeper is counted."
 Law11UC1,Understand,Conceptual,"Explain the difference between being in an offside position and committing an offside offense, including why one is penalized and the other is not."
-Law11UP1,Understand,Procedural,
-Law11UM1,Understand,Metacognitive,
-Law11ApF1,Apply,Factual,
-Law11ApC1,Apply,Conceptual,
-Law11ApP1,Apply,Procedural,
-Law11ApM1,Apply,Metacognitive,
-Law11AnF1,Analyze,Factual,
-Law11AnC1,Analyze,Conceptual,
-Law11AnP1,Analyze,Procedural,
-Law11AnM1,Analyze,Metacognitive,
+Law11UP1,Understand,Procedural,"Explain why offside position is fixed at the moment the ball is played or touched by a teammate, while the offense itself is assessed only later, when the player becomes involved in active play."
+Law11UM1,Understand,Metacognitive,"Explain why the Laws do not quantify how near an attacker must be to the goalkeeper in order to obstruct the goalkeeper's line of vision, and what this implies about the kind of judgment the referee must exercise."
+Law11ApF1,Apply,Factual,"An attacker commits an offside offense two meters from the penalty spot, inside the opponents' penalty area. State the restart that is awarded and the location from which it is taken."
+Law11ApC1,Apply,Conceptual,"An attacker in an offside position never touches the ball but stands directly in the goalkeeper's line of vision as a teammate's shot enters the goal. Determine whether an offside offense has occurred and identify which mode of active involvement, if any, applies."
+Law11ApP1,Apply,Procedural,"Team B's goalkeeper has advanced upfield to play the ball, so that exactly one Team B outfield defender is nearer to Team B's goal line than the goalkeeper. Applying the counting rule of Law 11, determine which Team B player now sets the offside line for Team A's attackers."
+Law11ApM1,Apply,Metacognitive,"In a match, an attacker in an offside position stands roughly three meters from the goalkeeper, without moving, as a teammate's shot enters the goal. For this incident, state which elements of the offside decision the Laws determine objectively and which elements require referee judgment."
+Law11AnF1,Analyze,Factual,"A match report includes four rulings: offside interference, a careless trip, deliberate handball in the penalty area, and gaining an offside advantage after a rebound. Identify which rulings are governed by Law 11 and which by other Laws."
+Law11AnC1,Analyze,Conceptual,"A goal is scored as follows: Attacker A1 is in an offside position when teammate A2 shoots; the shot rebounds off the goalpost to A1, who taps it in without any defender touching the ball. Analyze this goal to determine which mode of active involvement under Law 11 applies and whether the goal stands."
+Law11AnP1,Analyze,Procedural,"An assistant referee describes their procedure on a disallowed goal: '(1) I waited to see whether the attacker touched the ball. (2) When the attacker touched it, I judged the attacker's position at that moment of touch. (3) The attacker was behind the second-last opponent at that moment, so I raised my flag.' Analyze this procedure and identify which step misapplies the offside procedure prescribed by Law 11."
+Law11AnM1,Analyze,Metacognitive,"Consider the following written analysis of an offside call: 'The attacker was offside because he was level with the second-last defender, and level always means offside. Since he was within five meters of the goalkeeper, the Laws automatically deem this an obstruction of the line of vision.' Distinguish the claims in this analysis that Law 11 actually establishes from the claims that follow only from the author's own assumptions."
 Law11EF1,Evaluate,Factual,
 Law11EC1,Evaluate,Conceptual,
 Law11EP1,Evaluate,Procedural,
