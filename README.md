@@ -1,22 +1,30 @@
-# Evaluator Patterns<br><sub>Official PyTorch Implementation</sub>
+# Evaluator Patterns<br><sub>Official Benchmark and Results</sub>
 
 ### [Paper](http://arxiv.org/abs/2212.09748) | [Project Page](https://www.wpeebles.com/DiT) | Run DiT-XL/2 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/wpeebles/DiT) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/facebookresearch/DiT/blob/main/run_DiT.ipynb) <a href="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers"><img src="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers/badge"></a>
 
 ![DiT samples](visuals/sample_grid_0.png)
 
-This repo contains PyTorch model definitions, pre-trained weights and training/sampling code for our paper exploring 
-diffusion models with transformers (DiTs). You can find more visualizations on our [project page](https://www.wpeebles.com/DiT).
+Evaluator Patterns are a standardized, contractual approach to evaluating responses from generative AI systems. 
+Prompts establish requirements for model behavior, but model responses often contain more than the minimum answer. 
+The models may add explanation, context, supporting claims, citations, or other elaboration. 
+An evaluator therefore must judge not only whether the required answer is present, but whether the complete response conforms to the prompt and remains correct. 
+The paper treats prompt design and evaluator design as test-engineering activities and argues that evaluators should be **traceable, versioned, human-auditable, and reusable across prompts, models, and test cycles**.
 
-> [**Scalable Diffusion Models with Transformers**](https://www.wpeebles.com/DiT)<br>
-> [William Peebles](https://www.wpeebles.com), [Saining Xie](https://www.sainingxie.com)
-> <br>UC Berkeley, New York University<br>
+The framework connects four elements: **prompts, response claims, criterion micro-patterns, and scoring rules**. 
+Revised Bloom’s Taxonomy provides the organizing structure. 
+Prompts are classified along the **Cognitive Process Dimension**—Remember, Understand, Apply, Analyze, Evaluate, and Create—and the **Knowledge Dimension**—Factual, Conceptual, Procedural, and Metacognitive. 
+The cognitive-process dimension identifies the operation the prompt requires, while the knowledge dimension identifies the type of knowledge expected in the response. 
+This two-dimensional classification helps predict what kinds of evaluator criteria are necessary and can also expose gaps in benchmark coverage. 
+The paper illustrates this point with TruthfulQA, where a large majority of questions fall into the Remember × Factual cell, suggesting that conventional benchmarks can overemphasize knowledge retrieval at the expense of transfer and more complex reasoning.
 
-We train latent diffusion models, replacing the commonly-used U-Net backbone with a transformer that operates on 
-latent patches. We analyze the scalability of our Diffusion Transformers (DiTs) through the lens of forward pass 
-complexity as measured by Gflops. We find that DiTs with higher Gflops---through increased transformer depth/width or
-increased number of input tokens---consistently have lower FID. In addition to good scalability properties, our 
-DiT-XL/2 models outperform all prior diffusion models on the class-conditional ImageNet 512×512 and 256×256 benchmarks, 
-achieving a state-of-the-art FID of 2.27 on the latter.
+Evaluator Patterns consist of a common **evaluator scaffold** plus reusable **Criterion Micro-Patterns**. 
+The scaffold contains metadata for the prompt, Bloom’s category, benchmark, and evaluator version, followed by three criterion sections: **required claims, supporting claims, and disallowed claims**. Required claims must be present; supporting claims are optional but must be correct if included; disallowed claims must not appear. The default enterprise scoring rule is binary: a response receives a score of 1 only when all required criteria are satisfied and the response contains no incorrect, unsupported, contradictory, or disallowed substantive claims. This design closes the “optional claim” problem by preventing a model from passing merely because the minimum answer is correct while additional assertions are false. A failing score can trigger human audit and possible refinement of either the evaluator or the underlying reference knowledge.
+
+The paper defines **thirteen Criterion Micro-Patterns** grouped into three families. Claim-content patterns are aligned with Bloom’s Knowledge Dimension: **Factual Assertion** and **Contextual Assertion** for factual knowledge; **Conceptual Relation** and **Definitional** for conceptual knowledge; **Procedural Step Presence, Procedural Ordering, Procedural Transformation, and Procedural Guard** for procedural knowledge; and **Epistemic Status Consistency** for metacognitive knowledge. Cross-cutting patterns—**Deontic Status Consistency** and **Citation Support**—apply regardless of knowledge type. Response/task-conformance patterns—**Artifact Structure** and **Cognitive Operation Conformance**—evaluate whether the response performs the operation and adopts the form required by the prompt.
+
+Evaluators can be built **a priori** from subject-matter expertise, authoritative documents, and knowledge graphs, or refined **a posteriori** by decomposing collected model responses into claims and adding validated criteria. Knowledge graphs are particularly useful when ground truth is distributed across multiple sources because they can make relationships, conflicts, overlaps, and dependencies explicit. Regardless of construction method, the paper emphasizes that evaluator criteria should be audited and validated before operational use.
+
+For execution, the paper advocates **Reference-Guided LLM-as-a-Judge (RGLLM-a-a-J)** rather than an unconstrained LLM judge. The evaluator acts as an explicit reference contract, allowing the judge to score the **whole response in a single pass**, including required content and permissible elaboration. The approach is intended to combine the scalability of automated judging with greater control, transparency, and auditability. Its principal enterprise benefits are evaluator standardization, traceability and versioning, whole-response evaluation, faster scoring of complex responses, and more systematic benchmark diversity. Overall, the paper frames evaluator design not as an ad hoc rubric-writing exercise, but as a reusable **pattern language for contractual GenAI evaluation**.
 
 This repository contains:
 
