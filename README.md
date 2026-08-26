@@ -1,9 +1,5 @@
 # Evaluator Patterns<br><sub>Official Benchmark and Results</sub>
 
-## [Paper](http://arxiv.org/abs/2212.09748) | [Project Page](https://www.wpeebles.com/DiT) | Run DiT-XL/2 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/wpeebles/DiT) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/facebookresearch/DiT/blob/main/run_DiT.ipynb) <a href="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers"><img src="https://replicate.com/arielreplicate/scalable_diffusion_with_transformers/badge"></a>
-
-## ![DiT samples](visuals/sample_grid_0.png)
-
 Evaluator Patterns are a standardized, contractual approach to evaluating responses from generative AI systems. 
 Prompts establish requirements for model behavior, but model responses often contain more than the minimum answer. 
 The models may add explanation, context, supporting claims, citations, or other elaboration. 
@@ -25,37 +21,3 @@ The paper defines **thirteen Criterion Micro-Patterns** grouped into three famil
 Evaluators can be built **a priori** from subject-matter expertise, authoritative documents, and knowledge graphs, or refined **a posteriori** by decomposing collected model responses into claims and adding validated criteria. Knowledge graphs are particularly useful when ground truth is distributed across multiple sources because they can make relationships, conflicts, overlaps, and dependencies explicit. Regardless of construction method, the paper emphasizes that evaluator criteria should be audited and validated before operational use.
 
 For execution, the paper advocates **Reference-Guided LLM-as-a-Judge (RGLLM-a-a-J)** rather than an unconstrained LLM judge. The evaluator acts as an explicit reference contract, allowing the judge to score the **whole response in a single pass**, including required content and permissible elaboration. The approach is intended to combine the scalability of automated judging with greater control, transparency, and auditability. Its principal enterprise benefits are evaluator standardization, traceability and versioning, whole-response evaluation, faster scoring of complex responses, and more systematic benchmark diversity. Overall, the paper frames evaluator design not as an ad hoc rubric-writing exercise, but as a reusable **pattern language for contractual GenAI evaluation**.
-
-## This repository contains:
-
-## * 🪐 A simple PyTorch [implementation](models.py) of DiT
-## * ⚡️ Pre-trained class-conditional DiT models trained on ImageNet (512x512 and 256x256)
-## * 💥 A self-contained [Hugging Face Space](https://huggingface.co/spaces/wpeebles/DiT) and [Colab notebook](http://colab.research.google.com/github/facebookresearch/DiT/blob/main/run_DiT.ipynb) for running pre-trained DiT-XL/2 models
-## * 🛸 A DiT [training script](train.py) using PyTorch DDP
-
-## An implementation of DiT directly in Hugging Face `diffusers` can also be found [here](https://github.com/huggingface/diffusers/blob/main/docs/source/en/api/pipelines/dit.mdx).
-
-
-## Setup
-
-## First, download and set up the repo:
-
-## ```bash
-git clone https://github.com/facebookresearch/DiT.git
-cd DiT
-```
-
-We provide an [`environment.yml`](environment.yml) file that can be used to create a Conda environment. If you only want 
-to run pre-trained models locally on CPU, you can remove the `cudatoolkit` and `pytorch-cuda` requirements from the file.
-
-```bash
-conda env create -f environment.yml
-conda activate DiT
-```
-
-
-## Sampling [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/wpeebles/DiT) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/facebookresearch/DiT/blob/main/run_DiT.ipynb)
-![More DiT samples](visuals/sample_grid_1.png)
-
-**Pre-trained DiT checkpoints.** You can sample from our pre-trained DiT models with [`sample.py`](sample.py). Weights for our pre-trained DiT model will be 
-automatically downloaded depending on the model you use. The script has various arguments to switch between the 256x256
