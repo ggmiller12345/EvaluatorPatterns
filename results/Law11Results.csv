@@ -1,0 +1,26 @@
+Run Number, LLM, Bloom's Taxonomy, Factual Assertion, Contextual, Conceptual Relation, Definitional, Procedural Step Presence, Procedural Ordering, Procedural Transformation, Procedural Guard, Epistemic Status Consistency, Deontic Status, Artifact Structure, Citation
+1, GPT-5.6 Sol, Remember x Factual,2,0,0,0,0,0,0,0,0,0,1,0
+1, GPT-5.6 Sol, Remember x Conceptual,3,3,5,4,0,0,0,0,0,0,1,3
+1, GPT-5.6 Sol, Remember x Procedural,2,2,4,3,5,3,2,7,1,0,1,3
+1, GPT-5.6 Sol, Remember x Metacognitive,0,2,10,3,0,0,3,0,21,0,1,7
+1, GPT-5.6 Sol, Understand x Factual,3,2,4,6,0,0,5,0,1,0,1,4
+1, GPT-5.6 Sol, Understand x Conceptual,2,1,8,9,0,0,2,2,0,0,1,0
+1, GPT-5.6 Sol, Understand x Procedural,0,4,10,4,1,3,3,4,0,0,1,3
+1, GPT-5.6 Sol, Understand x Metacognitive,1,8,8,3,0,0,2,1,4,3,1,3
+1, GPT-5.6 Sol, Apply x Factual,3,0,0,0,0,0,1,1,0,2,1,0
+1, GPT-5.6 Sol, Apply x Conceptual,2,1,7,4,0,0,2,3,0,3,1,1
+1, GPT-5.6 Sol, Apply x Procedural,0,0,5,1,0,0,4,0,0,0,1,0
+1, GPT-5.6 Sol, Apply x Metacognitive,4,1,5,4,1,0,3,3,4,3,1,1
+1, GPT-5.6 Sol, Analyze x Factual,0,0,4,0,0,0,0,0,0,0,1,1
+1, GPT-5.6 Sol, Analyze x Conceptual,3,0,2,0,0,0,2,0,0,0,1,1
+1, GPT-5.6 Sol, Analyze x Procedural,0,0,0,0,1,5,1,0,0,0,1,1
+1, GPT-5.6 Sol, Analyze x Metacognitive,0,0,1,2,0,0,0,0,6,0,1,1
+1, GPT-5.6 Sol, Evaluate x Factual,2,1,0,0,0,0,0,0,0,0,1,1
+1, GPT-5.6 Sol, Evaluate x Conceptual,0,0,3,0,0,0,0,4,0,0,1,1
+1, GPT-5.6 Sol, Evaluate x Procedural,0,0,1,0,1,4,0,4,0,0,1,1
+1, GPT-5.6 Sol, Evaluate x Metacognitive,1,0,1,0,0,0,0,0,5,0,1,1
+1, GPT-5.6 Sol, Create x Factual,2,1,1,0,0,0,0,3,3,0,1,1
+1, GPT-5.6 Sol, Create x Conceptual,0,0,10,3,0,0,0,0,0,0,1,1
+1, GPT-5.6 Sol, Create x Procedural,2,1,1,4,1,1,0,5,0,0,1,1
+1, GPT-5.6 Sol, Create x Metacognitive,0,0,3,1,7,0,0,2,9,9,3,1
+
