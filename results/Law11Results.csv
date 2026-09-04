@@ -23,4 +23,27 @@ Run Number, LLM, Bloom's Taxonomy, Factual Assertion, Contextual, Conceptual Rel
 1, GPT-5.6 Sol, Create x Conceptual,0,0,10,3,0,0,0,0,0,0,1,1
 1, GPT-5.6 Sol, Create x Procedural,2,1,1,4,1,1,0,5,0,0,1,1
 1, GPT-5.6 Sol, Create x Metacognitive,0,0,3,1,7,0,0,2,9,9,3,1
-
+1, Gemini 3.8 Flash, Remember x Factual,1,2,0,0,0,0,0,0,0,0,0,1
+1, Gemini 3.8 Flash, Remember x Conceptual,2,3,4,5,0,0,0,1,0,0,0,1
+1, Gemini 3.8 Flash, Remember x Procedural,0,0,0,1,7,2,1,2,0,0,0,0
+1, Gemini 3.8 Flash, Remember x Metacognitive,3,0,1,0,0,0,0,1,5,0,0,0
+1, Gemini 3.8 Flash, Understand x Factual,2,2,0,2,0,0,2,0,0,0,0,0
+1, Gemini 3.8 Flash, Understand x Conceptual,1,2,7,2,0,0,0,0,0,0,0,0
+1, Gemini 3.8 Flash, Understand x Procedural,0,0,6,1,1,2,0,2,1,0,0,0
+1, Gemini 3.8 Flash, Understand x Metacognitive,0,1,4,1,0,0,0,0,4,0,0,0 
+1, Gemini 3.8 Flash, Apply x Factual,2,2,0,0,0,0,1,0,0,0,0,0
+1, Gemini 3.8 Flash, Apply x Conceptual,0,1,4,1,0,0,0,0,0,0,0,0
+1, Gemini 3.8 Flash, Apply x Procedural,2,0,0,1,1,0,3,0,0,0,0,0
+1, Gemini 3.8 Flash, Apply x Metacognitive,3,0,2,1,0,1,0,0,3,0,1,0
+1, Gemini 3.8 Flash, Analyze x Factual,3,2,2,0,0,0,0,0,0,0,0,0
+1, Gemini 3.8 Flash, Analyze x Conceptual,1,1,2,2,0,1,0,1,0,0,0,0
+1, Gemini 3.8 Flash, Analyze x Procedural,0,1,1,1,2,3,1,0,0,0,0,0
+1, Gemini 3.8 Flash, Analyze x Metacognitive,0,0,2,3,0,0,0,0,3,0,1,0
+1, Gemini 3.8 Flash, Evaluate x Factual,3,1,1,1,0,0,1,0,0,0,0,0
+1, Gemini 3.8 Flash, Evaluate x Conceptual,0,0,5,4,0,0,1,0,0,0,0,0
+1, Gemini 3.8 Flash, Evaluate x Procedural,1,1,2,1,1,3,2,2,1,0,0,0
+1, Gemini 3.8 Flash, Evaluate x Metacognitive,1,0,2,1,0,0,1,1,6,0,1,0
+1, Gemini 3.8 Flash, Create x Factual,1,1,2,1,1,3,2,2,1,0,0,0
+1, Gemini 3.8 Flash, Create x Conceptual,0,1,7,4,0,0,0,2,1,0,1,0
+1, Gemini 3.8 Flash, Create x Procedural,0,1,0,3,2,4,1,3,0,0,0,0
+1, Gemini 3.8 Flash, Create x Metacognitive,0,2,1,3,0,0,1,1,4,0,4,0
