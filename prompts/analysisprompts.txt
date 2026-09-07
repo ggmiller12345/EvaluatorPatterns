@@ -1,0 +1,10 @@
+#################################################################
+##                                                             ##
+## Prompts used in the analysis                                ##
+##                                                             ##
+#################################################################
+
+## Claim Division
+Divide the response into required and supporting claims and classify them by Bloom's Taxonomy Knowledge Dimension.
+
+## 
