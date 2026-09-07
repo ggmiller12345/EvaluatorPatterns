@@ -7,4 +7,5 @@
 ## Claim Division
 Divide the response into required and supporting claims and classify them by Bloom's Taxonomy Knowledge Dimension.
 
-## 
+## Classify the Criteria used to Evaluate the Response
+Use the Criteria Micro-Pattern Catalog to classify Primary and Secondary Criteria created from these claims.
