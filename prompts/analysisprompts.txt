@@ -9,3 +9,6 @@ Divide the response into required and supporting claims and classify them by Blo
 
 ## Classify the Criteria used to Evaluate the Response
 Use the Criteria Micro-Pattern Catalog to classify Primary and Secondary Criteria created from these claims.
+
+## Obtain the Count
+Count the number of each Criteria Type.
