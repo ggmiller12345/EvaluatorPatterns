@@ -47,3 +47,27 @@ Run Number, LLM, Bloom's Taxonomy, Factual Assertion, Contextual, Conceptual Rel
 1, Gemini 3.8 Flash, Create x Conceptual,0,1,7,4,0,0,0,2,1,0,1,0
 1, Gemini 3.8 Flash, Create x Procedural,0,1,0,3,2,4,1,3,0,0,0,0
 1, Gemini 3.8 Flash, Create x Metacognitive,0,2,1,3,0,0,1,1,4,0,4,0
+1, Fable 5.1, Remember x Factual,1,2,2,0,0,0,0,1,0,0,0,0
+1, Fable 5.1, Remember x Conceptual,2,4,3,3,0,0,1,2,0,0,1,0
+1, Fable 5.1, Remember x Procedural,3,0,3,1,6,1,0,3,0,0,1,0
+1, Fable 5.1, Remember x Metacognitive,3,1,1,0,0,0,1,0,7,0,0,0
+1, Fable 5.1, Understand x Factual,2,1,4,2,0,0,1,1,0,0,0,0
+1, Fable 5.1, Understand x Conceptual,3,2,7,2,0,1,0,0,0,0,0,0
+1, Fable 5.1, Understand x Procedural,1,1,8,0,2,1,0,1,0,0,0,0
+1, Fable 5.1, Understand x Metacognitive,1,1,4,1,0,0,0,1,5,0,0,0
+1, Fable 5.1, Apply x Factual,3,1,1,0,0,0,1,1,0,0,0,0
+1, Fable 5.1, Apply x Conceptual,1,1,4,2,0,0,2,0,1,0,0,0
+1, Fable 5.1, Apply x Procedural,2,0,2,1,1,0,1,1,0,0,0,0
+1, Fable 5.1, Apply x Metacognitive,1,1,5,0,0,0,0,1,6,0,1,0
+1, Fable 5.1, Analyze x Factual,7,1,3,0,0,0,0,0,0,0,0,0
+1, Fable 5.1, Analyze x Conceptual,2,0,7,0,0,0,1,1,0,0,0,0
+1, Fable 5.1, Analyze x Procedural,0,0,4,1,2,2,1,1,1,0,0,0
+1, Fable 5.1, Analyze x Metacognitive,2,1,5,0,0,0,0,0,6,0,1,0
+1, Fable 5.1, Evaluate x Factual,4,2,2,0,0,0,0,0,0,1,0,1
+1, Fable 5.1, Evaluate x Conceptual,1,1,9,2,0,0,0,0,0,0,0,1
+1, Fable 5.1, Evaluate x Procedural,2,1,5,1,2,2,0,1,1,0,0,1
+1, Fable 5.1, Evaluate x Metacognitive,2,1,4,0,0,0,0,0,7,0,0,1
+1, Fable 5.1, Create x Factual,12,1,2,0,0,0,1,0,1,0,1,1
+1, Fable 5.1, Create x Conceptual,1,1,9,3,0,0,0,2,0,0,1,0
+1, Fable 5.1, Create x Procedural,2,1,2,1,7,2,0,3,0,0,1,0
+1, Fable 5.1, Create x Metacognitive,1,1,2,0,2,0,0,2,9,0,1,0
