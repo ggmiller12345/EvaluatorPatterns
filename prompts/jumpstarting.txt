@@ -1,0 +1,18 @@
+## Jump starting is the process of creating an evaluator from a validated response. ##
+
+[Run the prompt in the system that you want an evaluator for]
+
+[Upload the paper to the LLM and add the prompt below]
+Using the rules in the uploaded paper, create an evaluator for the above response. Do not include any citations to the uploaded paper in the response.
+
+[Audit the evaluator by checking all of the criteria. Jump started evaluators frequently have required claims that should be supporting claims. Edit the evaluator appropriately.]
+
+[Create a new chat/session/conversation]
+
+[Run the prompt in the system that you want an evaluator for]
+
+Evaluate the above response using the evaluator '[Copy the new evaluator here]'
+
+[Edit the evaluator, adding any new supporting claims]
+
+[Rinse and repeat]
