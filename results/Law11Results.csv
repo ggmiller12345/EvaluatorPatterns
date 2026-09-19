@@ -69,7 +69,8 @@ Run Number, LLM, Bloom's Taxonomy, Factual Assertion, Contextual, Conceptual Rel
 1, Fable 5.1, Evaluate x Metacognitive,2,1,4,0,0,0,0,0,7,0,0,1
 1, Fable 5.1, Create x Factual,12,1,2,0,0,0,1,0,1,0,1,1
 1, Fable 5.1, Create x Conceptual,1,1,9,3,0,0,0,2,0,0,1,0
-1, Fable 5.1, Create x Procedural,2,1,2,1,7,2,0,3,0,0,1,0
-1, Fable 5.1, Create x Metacognitive,1,1,2,0,2,0,0,2,9,0,1,0
+1, Fable 5.1, Create x Procedural,2,1,2,1,7,2,0,3,0,0,1,1
+1, Fable 5.1, Create x Metacognitive,1,1,2,0,2,0,0,2,9,0,1,1
 2, GPT-5.6 Sol, Remember x Factual,2,0,2,0,0,0,1,1,1,3,0,1
-2, GPT-5.6 Sol, Remember x Conceptual,4,0,6,0,0,0,2,4,1,4,0,0
+2, GPT-5.6 Sol, Remember x Conceptual,4,0,6,0,0,0,2,4,1,4,0,1
+2, GPT-5.6 Sol, Remember x Procedural,1,0,9,3,7,9,4,11,3,3,0,1
